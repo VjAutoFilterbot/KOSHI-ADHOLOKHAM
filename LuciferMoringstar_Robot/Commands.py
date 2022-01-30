@@ -177,7 +177,7 @@ async def broadcast_handler_open(_, m):
 @Client.on_message(filters.private & filters.command("stats"))
 async def sts(c, m):
     await m.reply_text(
-        text=f"**Total Users in Database 📂:** `{await db.total_users_count()}``",
+        text=f"**Tᴏᴛᴀʟ Usᴇʀs Iɴ Dᴀᴛᴀʙᴀsᴇ :** `{await db.total_users_count()}``",
         parse_mode="Markdown",
         quote=True
     )
@@ -287,10 +287,10 @@ async def _banned_usrs(c, m):
 @Client.on_message(filters.command('total') & filters.user(ADMINS))
 async def total(bot, message):
     """Show total files in database"""
-    msg = await message.reply("Processing...⏳", quote=True)
+    msg = await message.reply("Pʀᴏᴄᴇssɪɴɢ...", quote=True)
     try:
         total = await Media.count_documents()
-        await msg.edit(f'📁 Saved files: {total}')
+        await msg.edit(f'Sᴀᴠᴇᴅ Fɪʟᴇs: {total}')
     except Exception as e:
         logger.exception('Failed to check total files')
         await msg.edit(f'Error: {e}')
@@ -338,7 +338,7 @@ async def bot_info(bot, message):
         [
             InlineKeyboardButton
                 (
-                     'Video', url=f'{TUTORIAL}'
+                     'Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url=f'https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot'
                 )
         ]
     ]
