@@ -11,15 +11,17 @@ from .Channel import (
 )
 
 HELP = """
-<b><u>Bᴀsɪᴄ Cᴏᴍᴍᴀᴅs</u></b>
-
-➥ /start : Cʜᴇᴄᴋ Iꜰ Aᴍ Aʟɪᴠᴇ
-
-➥ /about : Aʙᴏᴜᴛ Mᴇ
-
-➥ /status : Usᴇʀ Sᴛᴀᴛᴜs
-
-Pᴏᴡᴇʀᴅ Bʏ : @AIOM_BOTS
+╭────[ Vɪɴᴄᴇɴᴢᴏ ]───⍟
+│
+├ /start : Cʜᴇᴄᴋ Iꜰ Aᴍ Aʟɪᴠᴇ
+│
+├ /about : Aʙᴏᴜᴛ Mᴇ
+│
+├  /status : Usᴇʀ Sᴛᴀᴛᴜs
+│
+├ Pᴏᴡᴇʀᴇᴅ Bʏ : [ƛƖƠM ƁƠƬƧ](https://t.me/AIOM_BOTS)
+│
+╰──────[ Tʜᴀɴᴋ Yᴏᴜ ]───⍟
 """
 
 ABOUT = """
@@ -39,7 +41,7 @@ ABOUT = """
 │
 ├ Eᴅɪᴛɪɴɢ : [Cʟɪᴄᴋ Hᴇʀᴇ](https://t.me/ajvadntr2)
 │
-├ Pᴏᴡᴇʀᴇᴅ Bʏ : [ƛƖƠM ƁƠƬƧ](https://t.me/AIOM_BOTS
+├ Pᴏᴡᴇʀᴇᴅ Bʏ : [ƛƖƠM ƁƠƬƧ](https://t.me/AIOM_BOTS)
 │
 ├ Cʀᴇᴅɪᴛꜱ : Sᴜʙɪɴ Pʀᴏꜰᴇꜱꜱᴏʀ-99
 │
