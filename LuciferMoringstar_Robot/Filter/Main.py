@@ -285,24 +285,26 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
         elif query.data == "help":
             buttons = [[
-                InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url='t.me/AIO'),
-                InlineKeyboardButton('Gʀᴏᴜᴘ', url="https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot")
+                InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url='t.me/AIOM_BOTS'),
+                InlineKeyboardButton('Gʀᴏᴜᴘ', url='t.me/AIOM_BOTS_GROUP')
                 ],[
-                InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url=f'{TUTORIAL}')
+                InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url='https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot')
                 ]]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='t.me/Mo_Tech_YT'),
-                    InlineKeyboardButton('Source Code', url=f'{TUTORIAL}')
+                    InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url='t.me/AIOM_BOTS'),
+                    InlineKeyboardButton('Gʀᴏᴜᴘ', url='t.me/AIOM_BOTS_GROUP')
+                ],[
+                    InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url='https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot')
                 ]
                 ]
             await query.message.edit(text=f"{ABOUT}".format(TUTORIAL), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
-        elif query.data.startswith("pr0fess0r_99"):
+        elif query.data.startswith("ajvadntr"):
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
             for files in filedetails:
@@ -319,7 +321,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('💫 DEPLOY VIDEO 💫', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url='https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot')
                     ]
                     ]
                 
@@ -332,7 +334,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
         elif query.data.startswith("checksub"):
             if AUTH_CHANNEL and not await is_subscribed(client, query):
-                await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
+                await query.answer("I Like Your Smartness, But Don't Be Oversmart",show_alert=True)
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
@@ -350,7 +352,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url='https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot')
                     ]
                     ]
                 
@@ -366,4 +368,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("കൌതുകും ലേശം കൂടുതൽ ആണല്ലേ👀",show_alert=True)
+        await query.answer("Tʜɪs Is Nᴏᴛ Fᴏʀ Yᴏᴜ",show_alert=True)
