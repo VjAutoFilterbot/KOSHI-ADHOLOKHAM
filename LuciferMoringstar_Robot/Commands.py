@@ -44,14 +44,14 @@ async def start(bot, message):
                 ident, file_id = message.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=message.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="**Pʟᴇᴀsᴇ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ Tᴏ Usᴇ Tʜɪs Bᴏᴛ!**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                                InlineKeyboardButton("Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton("🔄 Try Again", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton("Rᴇᴛʀʏ / Tʀʏ Aɢᴀɪɴ", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
@@ -83,10 +83,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ Deploy Now 🖥️', url=f'{TUTORIAL}')
-                    ],
-                    [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ Aɢᴀɪɴ', switch_inline_query_current_chat='')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -101,11 +98,11 @@ async def start(bot, message):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**Pʟᴇᴀsᴇ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ Tᴏ Usᴇ Tʜɪs Bᴏᴛ!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                        InlineKeyboardButton("Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -117,21 +114,18 @@ async def start(bot, message):
                     [
                         InlineKeyboardButton
                             (
-                                "🔎Search Here", switch_inline_query_current_chat=''
-                            ),
-                        InlineKeyboardButton
-                            (
-                                "🤖More Botz", url="https://t.me/MT_Botz"
+                                "+ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜ'ʀᴇ Gʀᴏᴜᴘ +", url="http://t.me/VINCENZO_CASSANOS_BOT?startgroup=botstart"
                             )
+     
                     ],
                     [
                         InlineKeyboardButton
                             (
-                                "🤔Help", callback_data="help"
+                                "Hᴇʟᴘ", callback_data="help"
                             ),
                         InlineKeyboardButton
                             (
-                                "About🤠", callback_data="about"
+                                "Aʙᴏᴜᴛ", callback_data="about"
                             )
                     ]
                 ]
