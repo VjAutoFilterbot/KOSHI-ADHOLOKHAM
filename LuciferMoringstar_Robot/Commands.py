@@ -35,7 +35,7 @@ async def start(bot, message):
                 if user.status == "kicked":
                     await bot.send_message(
                         chat_id=message.from_user.id,
-                        text="Sorry Sir, You are Banned to use me.",
+                        text="Sorry Sir, You are Banned to use me.താങ്കളെ ഈ ചാനലിൽ നിന്നും എടുത്ത് കളഞ്ഞതാണ്. Contact... @BlinderTG",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -44,14 +44,14 @@ async def start(bot, message):
                 ident, file_id = message.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=message.from_user.id,
-                    text="**Pʟᴇᴀsᴇ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ Tᴏ Usᴇ Tʜɪs Bᴏᴛ!**",
+                    text="**🔰ഗ്രൂപ്പിൽ ഉള്ളവരെല്ലാം ചാനലിലും ജോയിൻ ആകണം.തുടർന്ന് റിഫ്രഷ് ബട്ടൺ ക്ലിക്ക് ചെയ്ത് ഫയൽ ശേഖരിക്കുക...\n🔰Join Channel And Click Refresh To Get File✌️**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url=invite_link.invite_link)
+                                InlineKeyboardButton("🎭𝙅𝙊𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇🎭", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton("Rᴇᴛʀʏ / Tʀʏ Aɢᴀɪɴ", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton(" 🔄𝙍𝙀𝙁𝙍𝙀𝙎𝙃🔄", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
@@ -61,7 +61,7 @@ async def start(bot, message):
             except Exception:
                 await bot.send_message(
                     chat_id=message.from_user.id,
-                    text="Something went Wrong.",
+                    text="Something went Wrong🤭Any Mal Practise🤧Contact Admin @BlinderTG.",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -81,11 +81,9 @@ async def start(bot, message):
                         f_caption=f_caption
                 if f_caption is None:
                     f_caption = f"{files.file_name}"
-                buttons = [
-                    [
-                        InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ Aɢᴀɪɴ', switch_inline_query_current_chat='')
-                    ]
-                    ]
+                buttons = [[
+            InlineKeyboardButton('Developers', url='t.me/AIOM_BOTS_GROUP')
+        ]]
                 await bot.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=file_id,
@@ -98,17 +96,17 @@ async def start(bot, message):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=message.from_user.id,
-            text="**Pʟᴇᴀsᴇ Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ Tᴏ Usᴇ Tʜɪs Bᴏᴛ!**",
+            text="**🔰ഗ്രൂപ്പിൽ ഉള്ളവരെല്ലാം ചാനലിലും ജോയിൻ ആകണം.തുടർന്ന് റിഫ്രഷ് ബട്ടൺ ക്ലിക്ക് ചെയ്ത് ഫയൽ ശേഖരിക്കുക...\n🔰Join Channel And Click Refresh To Get File✌️**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url=invite_link.invite_link)
+                        InlineKeyboardButton("🎭𝙅𝙊𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇🎭", url=invite_link.invite_link)
                     ]
                 ]
             )
         )
     else:
-        await message.reply_photo(photo=random.choice(PICS), caption=START_MSG.format(message.from_user.mention),
+        await message.reply(text="<b>Hey !!</b><i>Am Just A Advance Auto Filter Bot....\n😉Just Add Me To Your Group And Channel And Connect Them And See My Pevers 🔥🔥😝\nFor More Details Click Help Button Below..\n\n@CrazyBotsz</i>",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -334,12 +332,8 @@ async def delete(bot, message):
         await msg.edit('File not found in database')
 @Client.on_message(filters.command('about'))
 async def bot_info(bot, message):
-    buttons = [
-        [
-            InlineKeyboardButton
-                (
-                     'Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url=f'https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot'
-                )
-        ]
-    ]
-    await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    buttons = [[
+        InlineKeyboardButton('Home ⚡', callback_data='start'),
+        InlineKeyboardButton('Close 🔐', callback_data='close')
+    ]]
+    await message.reply(text="<b><u><i>You Tried Your Best.... I Expected That..... But You Are A Fool Bro... Dont Copy Others Idea🤧Thats Not Good.... Create Your Idea In Your Mind🎭AnyWay ബൈ The ബൈ🤭</i></b></u>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
