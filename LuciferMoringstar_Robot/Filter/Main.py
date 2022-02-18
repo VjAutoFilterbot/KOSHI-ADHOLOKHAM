@@ -125,23 +125,29 @@ async def group(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                filename = f"[{get_size(file.file_size)}] {file.file_name}"
+                filename = f"🎭[{get_size(file.file_size)}] {file.file_name}"
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{BOT_USERNAME}?start=pr0fess0r_99_-_-_-_{file_id}")]
                 )
         else: 
             if SEPLLING_MODE == "on":
-                LuciferMoringstar_Robot=await client.send_message(
+                LuciferMoringstar_Robot=await client.send_sticker(                   
                     chat_id = message.chat.id,
-                    text=SEPLLING_MODE_TEXT.format(message.from_user.first_name),
-                    parse_mode="html",
-                    reply_to_message_id=message.message_id
-                )
-                await asyncio.sleep(15) 
-                await LuciferMoringstar_Robot.delete()
-            return
+                    sticker="CAACAgUAAxkBAAEByQ5h-O0PM7989UvoZrtxcvwe_lyxogACMwQAAoTT8Va9rS_EQ4gPzh4E",       
+                    reply_markup = InlineKeyboardMarkup([[
+                 InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}")
+                 ],[
+                 InlineKeyboardButton("🔍IMDB", url=f"https://www.imdb.com/find?q={reply}"),
+                 InlineKeyboardButton("Wikipedia🔎", url=f"https://en.m.wikipedia.org/w/index.php?search={reply}")
+                 ]]  
+                ),
+              reply_to_message_id=message.message_id
+            )
+          await asyncio.sleep(15) 
+          await LuciferMoringstar_Robot.delete()
+          return
         if not btn:
-            return
+          return
 
         if len(btn) > 10: 
             btns = list(split_list(btn, 10)) 
