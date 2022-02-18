@@ -110,21 +110,17 @@ async def start(bot, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton
-                            (
-                                "+ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜ'ʀᴇ Gʀᴏᴜᴘ +", url="http://t.me/VINCENZO_CASSANOS_BOT?startgroup=botstart"
-                            )
-     
+                        InlineKeyboardButton("🛠️𝙃𝙀𝙇𝙋🛠️", callback_data="about")
                     ],
                     [
-                        InlineKeyboardButton
-                            (
-                                "Hᴇʟᴘ", callback_data="help"
-                            ),
-                        InlineKeyboardButton
-                            (
-                                "Aʙᴏᴜᴛ", callback_data="about"
-                            )
+                        InlineKeyboardButton("✨️𝙂𝙍𝙊𝙐𝙋", url='https://t.me/UrvashiTheaters'),
+                        InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇✨️", url='https://t.me/+4m6hnUd118BlOWRl'),
+                    ],
+                    [
+                        InlineKeyboardButton("🛠️𝙃𝙀𝙇𝙋🛠️", callback_data="about")
+                    ],
+                    [
+                        InlineKeyboardButton("🛠️𝙃𝙀𝙇𝙋🛠️", callback_data="about")
                     ]
                 ]
             )
