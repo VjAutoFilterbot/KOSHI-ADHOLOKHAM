@@ -11,39 +11,19 @@ from .Channel import (
 )
 
 HELP = """
-╭────[ Vɪɴᴄᴇɴᴢᴏ ]───⍟
-│
-├ /start : Cʜᴇᴄᴋ Iꜰ Aᴍ Aʟɪᴠᴇ
-│
-├ /about : Aʙᴏᴜᴛ Mᴇ
-│
-├  /status : Usᴇʀ Sᴛᴀᴛᴜs
-│
-├ Pᴏᴡᴇʀᴇᴅ Bʏ : [ƛƖƠM ƁƠƬƧ](https://t.me/AIOM_BOTS)
-│
-╰──────[ Tʜᴀɴᴋ Yᴏᴜ ]───⍟
+<b><i><u>How To Use Me!?</u></i></b>
+<i>
+-> Add Me To Any Group And Make Me Admin I Will Sent Movies There💞
+-> Add Me To Your Desired Channel
+</i>
+           
+@CrazyBotsz
 """
 
-ABOUT = """
-╭────[ Vɪɴᴄᴇɴᴢᴏ ]───⍟
-│
-├ Bᴏᴛ Nᴀᴍᴇ : [Vɪɴᴄᴇɴᴢᴏ](https://t.me/VINCENZO_CASSANOS_BOT)
-│
-├ Cʜᴀɴɴᴇʟ : [ƛƖƠM ƁƠƬƧ](https://t.me/AIOM_BOTS)
-│
-├ Vᴇʀsɪᴏɴ : 1.0.2.2  Bᴇᴛᴀ
-│
-├ Sᴏᴜʀᴄᴇ : [Cʟɪᴄᴋ Hᴇʀᴇ](https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot)
-│
-├ Sᴇʀᴠᴇʀ : [Hᴇʀᴏᴋᴜ](https://www.heroku.com)
-│
-├ Dᴇᴠᴇʟᴏᴘᴇʀ : [Cʟɪᴄᴋ Hᴇʀᴇ](https://t.me/PR0FESS0R_99)
-│
-├ Eᴅɪᴛɪɴɢ : [Cʟɪᴄᴋ Hᴇʀᴇ](https://t.me/ajvadntr2)
-│
-├ Pᴏᴡᴇʀᴇᴅ Bʏ : [ƛƖƠM ƁƠƬƧ](https://t.me/AIOM_BOTS)
-│
-├ Cʀᴇᴅɪᴛꜱ : Sᴜʙɪɴ Pʀᴏꜰᴇꜱꜱᴏʀ-99
-│
-╰──────[ Tʜᴀɴᴋ Yᴏᴜ ]───⍟
+ABOUT = """<b>➥ Name</b> : <code> Auto Filter Bot</code>
+    
+<b>➥ Creator</b> : <b><i><a href="https://t.me/AlbertEinstein_TG">AlbertEinstein_TG</a></i></b>
+<b>➥ Language</b> : <code>Python3</code>
+<b>➥ Library</b> : <i><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></i>
+<b>➥ Source Code</b> : <i><a href="https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot">Click Me</a></i>
 """
