@@ -285,22 +285,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
         elif query.data == "help":
             buttons = [[
-                InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url='t.me/AIOM_BOTS'),
-                InlineKeyboardButton('Gʀᴏᴜᴘ', url='t.me/AIOM_BOTS_GROUP')
-                ],[
-                InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url='https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot')
-                ]]
+        InlineKeyboardButton('Home ⚡', callback_data='start'),
+        InlineKeyboardButton('About 🚩', callback_data='about')
+    ],[
+        InlineKeyboardButton('Close 🔐', callback_data='close')
+    ]]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "about":
-            buttons = [
-                [
-                    InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url='t.me/AIOM_BOTS'),
-                    InlineKeyboardButton('Gʀᴏᴜᴘ', url='t.me/AIOM_BOTS_GROUP')
-                ],[
-                    InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url='https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot')
-                ]
-                ]
+            buttons = [[
+        InlineKeyboardButton('Home ⚡', callback_data='start'),
+        InlineKeyboardButton('Close 🔐', callback_data='close')
+    ]]
             await query.message.edit(text=f"{ABOUT}".format(TUTORIAL), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
@@ -319,11 +315,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         f_caption=f_caption
                 if f_caption is None:
                     f_caption = f"{files.file_name}"
-                buttons = [
-                    [
-                        InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url='https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot')
-                    ]
-                    ]
+                buttons = [[
+            InlineKeyboardButton('Developers', url='t.me/AIOM_BOTS_GROUP')
+        ]]
                 
                 await query.answer()
                 await client.send_cached_media(
@@ -334,7 +328,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
         elif query.data.startswith("checksub"):
             if AUTH_CHANNEL and not await is_subscribed(client, query):
-                await query.answer("I Like Your Smartness, But Don't Be Oversmart",show_alert=True)
+                await query.answer("മോനെ വേണ്ട കേട്ടോ.. ആദ്യം ജോയിൻ ചെയ്യ്.... JOIN Brooh!Then Retry... No Malpractise Allowed Here😝",show_alert=True)
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
@@ -350,11 +344,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         f_caption=f_caption
                 if f_caption is None:
                     f_caption = f"{title}"
-                buttons = [
-                    [
-                        InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ', url='https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot')
-                    ]
-                    ]
+                buttons = [[
+            InlineKeyboardButton('Developers', url='t.me/AIOM_BOTS_GROUP')
+        ]]
                 
                 await query.answer()
                 await client.send_cached_media(
@@ -368,4 +360,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("Tʜɪs Is Nᴏᴛ Fᴏʀ Yᴏᴜ",show_alert=True)
+        await query.answer("എന്താടാ നീ അങ്ങനെ നോക്കുന്നെ😝",show_alert=True)
