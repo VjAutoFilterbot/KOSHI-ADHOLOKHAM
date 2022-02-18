@@ -106,7 +106,7 @@ async def start(bot, message):
             )
         )
     else:
-        await message.reply(text="<b>Hey !!</b><i>Am Just A Advance Auto Filter Bot....\n😉Just Add Me To Your Group And Channel And Connect Them And See My Pevers 🔥🔥😝\nFor More Details Click Help Button Below..\n\n@CrazyBotsz</i>",
+        await message.reply(text=START_MSG.format(message.from_user.mention),
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
