@@ -48,10 +48,6 @@
             "value": "",
             "required": false
         },
-        "PICS": {
-            "description": "Add some telegraph link of pictures .",
-            "value": ""
-        },
         "START_MSG": {
             "description": "Welcome message for start command",
             "value": "**Hey {} I'm ADV Auto Filter Bot**",
@@ -62,18 +58,8 @@
             "value": "False",
             "required": false
         },
-        "OMDB_API_KEY": {
-            "description": "Your OMBD API KEY, Fill if you want to generate a imdb poster of movie in autofilter.",
-            "value": "",
-            "required": false
-        },
         "CUSTOM_FILE_CAPTION": {
             "description": "A custom file caption for your files. formatable with , file_name, file_caption, file_size, Read Readme.md for better understanding.",
-            "value": "",
-            "required": false
-        },
-        "AUTH_GROUPS": {
-            "description": "ID of groups which bot should work as autofilter, bot can only work in thease groups. If not given , bot can be used in any group.",
             "value": "",
             "required": false
         },
@@ -117,11 +103,6 @@
         "SEPLLING_MODE_ON_OR_OFF": {
             "description": "Spelling Mode on or off",
             "value": "on",
-            "required": true
-        },
-        "SEPLLING_MODE_TEXT": {
-            "description": "Seplling Mode Text",
-            "value": "Check Seplling",
             "required": true
         },
         "BROADCAST_CHANNEL": {
