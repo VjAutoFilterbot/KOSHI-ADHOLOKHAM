@@ -82,7 +82,7 @@ async def start(bot, message):
                 if f_caption is None:
                     f_caption = f"{files.file_name}"
                 buttons = [[
-            InlineKeyboardButton('Developers', url='t.me/AIOM_BOTS_GROUP')
+            InlineKeyboardButton('Developers', url='http://t.me/AIOM_BOTS')
         ]]
                 await bot.send_cached_media(
                     chat_id=message.from_user.id,
