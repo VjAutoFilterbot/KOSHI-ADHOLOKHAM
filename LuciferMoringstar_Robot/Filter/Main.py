@@ -135,15 +135,15 @@ async def group(client, message):
                     chat_id = message.chat.id,
                     sticker="CAACAgUAAxkBAAEByQ5h-O0PM7989UvoZrtxcvwe_lyxogACMwQAAoTT8Va9rS_EQ4gPzh4E",       
                     reply_markup = InlineKeyboardMarkup([[
-                 InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={reply}")
+                 InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={search}")
                  ],[
-                 InlineKeyboardButton("🔍IMDB", url=f"https://www.imdb.com/find?q={reply}"),
-                 InlineKeyboardButton("Wikipedia🔎", url=f"https://en.m.wikipedia.org/w/index.php?search={reply}")
+                 InlineKeyboardButton("🔍IMDB", url=f"https://www.imdb.com/find?q={search}"),
+                 InlineKeyboardButton("Wikipedia🔎", url=f"https://en.m.wikipedia.org/w/index.php?search={search}")
                  ]]  
                 ),
               reply_to_message_id=message.message_id
                 )
-                await asyncio.sleep(60) 
+                await asyncio.sleep(20) 
                 await LuciferMoringstar_Robot.delete()
             return
         if not btn:
