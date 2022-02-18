@@ -110,17 +110,17 @@ async def start(bot, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🛠️𝙃𝙀𝙇𝙋🛠️", callback_data="about")
+                        InlineKeyboardButton("➕ 𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙𝚜 ➕", url="http://t.me/Imdbautofilter_bot?startgroup=botstart")
                     ],
                     [
-                        InlineKeyboardButton("✨️𝙂𝙍𝙊𝙐𝙋", url='https://t.me/UrvashiTheaters'),
-                        InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇✨️", url='https://t.me/+4m6hnUd118BlOWRl'),
+                        InlineKeyboardButton("Developers", url='https://t.me/CrazyBotsz'),
+                        InlineKeyboardButton("Source Code 🧾", url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2'),
                     ],
                     [
-                        InlineKeyboardButton("🛠️𝙃𝙀𝙇𝙋🛠️", callback_data="about")
+                        InlineKeyboardButton("Support 🛠", url='https://t.me/CrazyBotszGrp')
                     ],
                     [
-                        InlineKeyboardButton("🛠️𝙃𝙀𝙇𝙋🛠️", callback_data="about")
+                        InlineKeyboardButton("Help ⚙", callback_data="help")
                     ]
                 ]
             )
@@ -332,4 +332,4 @@ async def bot_info(bot, message):
         InlineKeyboardButton('Home ⚡', callback_data='start'),
         InlineKeyboardButton('Close 🔐', callback_data='close')
     ]]
-    await message.reply(text="<b><u><i>You Tried Your Best.... I Expected That..... But You Are A Fool Bro... Dont Copy Others Idea🤧Thats Not Good.... Create Your Idea In Your Mind🎭AnyWay ബൈ The ബൈ🤭</i></b></u>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>➥ Name</b> : <code> Auto Filter Bot</code>\n\n<b>➥ Creator</b> : <b><i><a href="https://t.me/AlbertEinstein_TG">AlbertEinstein_TG</a></i></b>\n<b>➥ Language</b> : <code>Python3</code>\n<b>➥ Library</b> : <i><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></i>\n<b>➥ Source Code</b> : <i><a href="https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot">Click Me</a></i>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
