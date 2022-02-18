@@ -22,11 +22,14 @@ DATABASE_NAME = 'LuciferMoringstar_Robot'
 COLLECTION_NAME = 'channel_files'  # If you are using the same database, then use different collection name for each bot
 
 # Messages
-START_MSG = """
-**Hi, I'm Media Search bot**
+START_MSG = """<b>Hey {}!!</b>
+<i>Am Just A Advance Auto Filter Bot....😉
 
-Here you can search files in inline mode. Just press follwing buttons and start searching.
-"""
+Just Add Me To Your Group And Channel And Connect Them And See My Pevers 🔥🔥😝
+
+For More Details Click Help Button Below..
+@CrazyBotsz
+</i>"""
 
 SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
-INVITE_MSG = 'Please join @.... to use this bot'
+INVITE_MSG = '<b><u>🔰You Need To Join Our Channel and Press Refresh Button to get the file</b></u>.\n<b><u>🔰ചാനലിൽ ജോയിൻ ചെയ്ത് Refresh കൊടുത്ത് start കൊടുക്കുക💗</b></u>'
