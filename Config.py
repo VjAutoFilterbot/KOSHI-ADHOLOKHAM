@@ -43,10 +43,13 @@ DATABASE_NAME = "LuciferMoringstar_Robot"
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Messages
-default_start_msg = """
-**Hi, I'm Auto Filter V3**
-Here you can search files in Inline mode as well as PM, Use the below buttons to search files or send me the name of file to search.
-"""
+default_start_msg = """<b>Hey {}!!</b>
+<i>Am Just A Advance Auto Filter Bot....😉
+Just Add Me To Your Group And Channel And Connect Them And See My Pevers 🔥🔥😝
+For More Details Click Help Button Below..
+@CrazyBotsz
+</i>"""
+
 START_MSG = environ.get('START_MSG', default_start_msg)
 START_IMG = environ.get("START_IMG", "")
 
