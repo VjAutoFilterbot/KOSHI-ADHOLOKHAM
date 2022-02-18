@@ -135,10 +135,10 @@ async def group(client, message):
                     chat_id = message.chat.id,
                     sticker="CAACAgUAAxkBAAEByQ5h-O0PM7989UvoZrtxcvwe_lyxogACMwQAAoTT8Va9rS_EQ4gPzh4E",       
                     reply_markup = InlineKeyboardMarkup([[
-                 InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q={search}")
+                 InlineKeyboardButton("🎗️ Google 🎗️", url=f"https://www.google.com/search?q")
                  ],[
-                 InlineKeyboardButton("🔍IMDB", url=f"https://www.imdb.com/find?q={search}"),
-                 InlineKeyboardButton("Wikipedia🔎", url=f"https://en.m.wikipedia.org/w/index.php?search={search}")
+                 InlineKeyboardButton("🔍IMDB", url=f"https://www.imdb.com/find?q"),
+                 InlineKeyboardButton("Wikipedia🔎", url=f"https://en.m.wikipedia.org/w/index.php?search")
                  ]]  
                 ),
               reply_to_message_id=message.message_id
