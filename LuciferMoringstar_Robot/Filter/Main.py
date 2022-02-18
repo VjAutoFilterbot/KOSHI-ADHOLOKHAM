@@ -285,16 +285,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
         elif query.data == "help":
             buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='pages'),
+        InlineKeyboardButton('Home ⚡', url='http://t.me/AIOM_BOTS'),
         InlineKeyboardButton('About 🚩', callback_data='about')
     ],[
-        InlineKeyboardButton('Close 🔐', callback_data='close')
+        InlineKeyboardButton('Close 🔐', callback_data='pages')
     ]]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "about":
             buttons = [[
-            InlineKeyboardButton('Developers', url='https://t.me/UrvashiTheaters')
+            InlineKeyboardButton('Developers', url='http://t.me/AIOM_BOTS')
         ]]
             await query.message.edit(text=f"{ABOUT}".format(TUTORIAL), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
@@ -315,7 +315,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 if f_caption is None:
                     f_caption = f"{files.file_name}"
                 buttons = [[
-            InlineKeyboardButton('Developers', url='https://t.me/UrvashiTheaters')
+            InlineKeyboardButton('Developers', url='http://t.me/AIOM_BOTS')
         ]]
                 
                 await query.answer()
@@ -344,7 +344,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 if f_caption is None:
                     f_caption = f"{title}"
                 buttons = [[
-            InlineKeyboardButton('Developers', url='https://t.me/UrvashiTheaters')
+            InlineKeyboardButton('Developers', url='http://t.me/AIOM_BOTS')
         ]]
                 
                 await query.answer()
