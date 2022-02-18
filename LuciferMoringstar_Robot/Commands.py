@@ -332,4 +332,4 @@ async def bot_info(bot, message):
         InlineKeyboardButton('Home ⚡', callback_data='start'),
         InlineKeyboardButton('Close 🔐', callback_data='close')
     ]]
-    await message.reply(text="<b>➥ Name</b> : <code> Auto Filter Bot</code>\n\n<b>➥ Creator</b> : <b><i><a href="https://t.me/AlbertEinstein_TG">AlbertEinstein_TG</a></i></b>\n<b>➥ Language</b> : <code>Python3</code>\n<b>➥ Library</b> : <i><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></i>\n<b>➥ Source Code</b> : <i><a href="https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot">Click Me</a></i>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b><u><i>You Tried Your Best.... I Expected That..... But You Are A Fool Bro... Dont Copy Others Idea🤧Thats Not Good.... Create Your Idea In Your Mind🎭AnyWay ബൈ The ബൈ🤭</i></b></u>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
