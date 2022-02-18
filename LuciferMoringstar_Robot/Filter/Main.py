@@ -142,12 +142,12 @@ async def group(client, message):
                  ]]  
                 ),
               reply_to_message_id=message.message_id
-            )
-          await asyncio.sleep(15) 
-          await LuciferMoringstar_Robot.delete()
-          return
+                )
+                await asyncio.sleep(60) 
+                await LuciferMoringstar_Robot.delete()
+            return
         if not btn:
-          return
+            return
 
         if len(btn) > 10: 
             btns = list(split_list(btn, 10)) 
