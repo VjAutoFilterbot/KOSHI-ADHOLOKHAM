@@ -97,7 +97,7 @@ async def filter(client, message):
             [InlineKeyboardButton(text="NEXT⏭️",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
-            [InlineKeyboardButton(text=f"🔰Pages 1/{data['total']}🔰",callback_data="pages")]
+            [InlineKeyboardButton(text=f"Pages 1/{data['total']}",callback_data="pages")]
         )
         poster=None
         if API_KEY:
