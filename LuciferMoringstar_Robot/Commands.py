@@ -104,28 +104,7 @@ async def start(bot, message):
                     ]
                 ]
             )
-        )
-    else:
-        await message.reply(text=START_MSG.format(message.from_user.mention),
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("➕ 𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙𝚜 ➕", url="http://t.me/Autofilteropen_bot?startgroup=botstart")
-                    ],
-                    [
-                        InlineKeyboardButton("Developers", url='http://t.me/AIOM_BOTS'),
-                        InlineKeyboardButton("Source Code 🧾", url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2'),
-                    ],
-                    [
-                        InlineKeyboardButton("Support 🛠", url='https://t.me/CrazyBotszGrp')
-                    ],
-                    [
-                        InlineKeyboardButton("Help ⚙", callback_data="help")
-                    ]
-                ]
-            )
-        )
-        StopPropagation
+        )    
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
