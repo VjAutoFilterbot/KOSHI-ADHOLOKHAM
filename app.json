@@ -48,11 +48,6 @@
             "value": "",
             "required": false
         },
-        "START_MSG": {
-            "description": "Welcome message for start command",
-            "value": "**Hey {} I'm ADV Auto Filter Bot**",
-            "required": false
-        },
         "USE_CAPTION_FILTER": {
             "description": "Whether bot should use captions to improve search results. (True False)",
             "value": "False",
@@ -66,14 +61,6 @@
         "DATABASE_2": {
             "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video - https://youtu.be/gBLTsH-IXr0",
             "value": ""
-        },
-        "BOT_NAME": {
-            "description": "Enter Your Bot Name",
-           "value": "LuciferMoringstar Robot"
-        },
-        "BOT_USERNAME": {
-            "description": "your Bot User Name from @Botfather (Without @) eg LuciferMoringstar_robot",
-           "value": "LuciferMoringstar_Robot"
         },
         "COLLECTION_NAME": {
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
