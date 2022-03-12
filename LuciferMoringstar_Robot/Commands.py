@@ -4,7 +4,7 @@ import random
 from pyrogram import Client, filters
 from pyrogram import StopPropagation
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from Config import START_MSG, CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, TUTORIAL, BROADCAST_CHANNEL, DB_URL, SESSION, ADMIN_ID, BOT_USERNAME, START_IMG, PICS
+from Config import CHANNELS, ADMINS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, BROADCAST_CHANNEL, DB_URL, SESSION, ADMIN_ID
 from LuciferMoringstar_Robot.Utils import Media, get_file_details 
 from LuciferMoringstar_Robot.Broadcast import broadcast
 from LuciferMoringstar_Robot import ABOUT
@@ -24,7 +24,7 @@ async def start(bot, message):
         await db.add_user(chat_id)
         await bot.send_message(
             LOG_CHANNEL,
-            f"#NEWUSER: \n\nNew User [{message.from_user.first_name}](tg://user?id={message.from_user.id}) started @{BOT_USERNAME} !!",
+            f"#NEWUSER: \n\nNew User [{message.from_user.first_name}](tg://user?id={message.from_user.id}) started  !!",
         )
     usr_cmdall1 = message.text
     if usr_cmdall1.startswith("/start pr0fess0r_99"):
@@ -81,14 +81,10 @@ async def start(bot, message):
                         f_caption=f_caption
                 if f_caption is None:
                     f_caption = f"{files.file_name}"
-                buttons = [[
-            InlineKeyboardButton('Developers', url='http://t.me/AIOM_BOTS')
-        ]]
                 await bot.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=file_id,
                     caption=f_caption,
-                    reply_markup=InlineKeyboardMarkup(buttons)
                     )
         except Exception as err:
             await message.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
@@ -106,7 +102,7 @@ async def start(bot, message):
             )
         )    
 
-@Client.on_message(filters.command('channel') & filters.user(ADMINS))
+@Client.on_message(filters.command('channels') & filters.user(ADMINS))
 async def channel_info(bot, message):
     """Send basic information of channel"""
     if isinstance(CHANNELS, (int, str)):
@@ -147,7 +143,7 @@ async def broadcast_handler_open(_, m):
         await broadcast(m, db)
 
 
-@Client.on_message(filters.private & filters.command("stats"))
+@Client.on_message(filters.private & filters.command("status"))
 async def sts(c, m):
     await m.reply_text(
         text=f"**Tᴏᴛᴀʟ Usᴇʀs Iɴ Dᴀᴛᴀʙᴀsᴇ :** `{await db.total_users_count()}``",
@@ -269,7 +265,7 @@ async def total(bot, message):
         await msg.edit(f'Error: {e}')
 
 
-@Client.on_message(filters.command('logger') & filters.user(ADMINS))
+@Client.on_message(filters.command('log') & filters.user(ADMINS))
 async def log_file(bot, message):
     """Send log file"""
     try:
@@ -278,7 +274,7 @@ async def log_file(bot, message):
         await message.reply(str(e))
 
 
-@Client.on_message(filters.command('delete') & filters.user(ADMINS))
+@Client.on_message(filters.command('del') & filters.user(ADMINS))
 async def delete(bot, message):
     """Delete file from database"""
     reply = message.reply_to_message
